@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Sidebar from './components/Sidebar'
 import Navbar from './components/Navbar/Navbar'
 import StateSection from './components/StateSection'
+import TaskSection from './components/TaskSection/TaskSection'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <div className='col-span-4'>
       <Navbar/>
       <StateSection/>
+      <TaskSection/>
       </div>
       
     </main>

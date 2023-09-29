@@ -12,3 +12,16 @@ export interface NotificationMenuType {
     icon:IconType,
     number:number | null
 }
+
+export interface TodoType {
+    id:number;
+    tag:string;
+    title:string;
+    percentage : number
+    due_time :Date
+    isProgressing ? : boolean
+    isDone ?: boolean
+    isRevised ? : boolean
+    color: string
+    taskTypeId: number
+}
