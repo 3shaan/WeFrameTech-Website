@@ -1,9 +1,10 @@
 import { sideBarDataType } from "../types/types";
-import {TbDashboard} from 'react-icons/tb';
-import {MdOutlineMarkEmailUnread} from 'react-icons/md'
-import {AiOutlineWechat} from 'react-icons/ai'
+import {TbDashboard, TbSettingsFilled} from 'react-icons/tb';
+import {MdGroups, MdOutlineMarkEmailUnread} from 'react-icons/md'
+import {AiOutlineShop, AiOutlineWechat} from 'react-icons/ai'
 import {BsGrid, BsFillCalendarFill} from 'react-icons/bs'
 import {LuContact} from 'react-icons/lu'
+import { FaFileInvoiceDollar } from "react-icons/fa";
 
 export const sidebarData:sideBarDataType[] = [
     {
@@ -34,23 +35,23 @@ export const sidebarData:sideBarDataType[] = [
         title:"Calender"
     },
     {   id:7,
-        icon:BsFillCalendarFill,
+        icon:MdGroups,
         title:"Courses",
         hasSideIcon:true
     },
     {
         id:8,
-        icon:BsFillCalendarFill,
+        icon:AiOutlineShop,
         title:"Shop"
     },
     {
         id:9,
-        icon:BsFillCalendarFill,
+        icon:FaFileInvoiceDollar,
         title:"Invoice",
         hasSideIcon:true
     },
     {   id:10,
-        icon:BsFillCalendarFill,
+        icon:TbSettingsFilled,
         title:"Settings"
     },
 ]
