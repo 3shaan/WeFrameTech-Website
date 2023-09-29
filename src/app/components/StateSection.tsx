@@ -10,10 +10,10 @@ type StateSectionProps = {};
 
 export default function StateSection({}: StateSectionProps) {
   return (
-    <section className="text-white m-6 p-6 h-44 bg-primary rounded-md flex flex-col justify-between">
-      <section className="flex justify-between items-center">
+    <section className="text-white m-6 p-6 lg:h-44 bg-primary rounded-md flex flex-col justify-between">
+      <section className="md:flex justify-between items-center ">
         <div className="flex items-center gap-4">
-          <div className="w-8 h-8 rounded-full p-1 bg-gray-500 flex justify-center items-center ">
+          <div className="w-8 h-8 rounded-full p-1 bg-gray-500 hidden md:flex justify-center items-center ">
             <AiOutlineArrowLeft size={18} />
           </div>
           <div>
@@ -23,7 +23,7 @@ export default function StateSection({}: StateSectionProps) {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 mt-3 lg:mt-0">
           <div>
             <p>Central Martial Arts</p>
             <p>Sunnyvale, Ca</p>
@@ -35,26 +35,32 @@ export default function StateSection({}: StateSectionProps) {
         </div>
       </section>
       {/* second half  */}
-      <section className="pl-10 flex justify-between items-center gap-10">
-        <div className="flex gap-3">
+      <section className="md:pl-10 md:flex justify-between items-center gap-10">
+        <div className="lg:flex gap-3 grid grid-cols-3 mt-3 lg:mt-0 gap-x-10">
           <AvatarGroup width={30} height={30} isMore />
+          <div className="col-span-2">
           <Button danger type="button">
            <MdPersonAddAlt1 size={22} /> <p>Invite People</p>
           </Button>
+          </div>
           <Button isOutline type="button">
             Private
           </Button>
           <Button primary type="button">
             Edit
           </Button>
-          <Button isOutline type="button">
+         <div className="col-span-2">
+         <Button isOutline type="button">
           <LiaCommentSolid size={22} /> <p>45 Comments</p>
           </Button>
+         </div>
         </div>
 
-        <div className="flex gap-5">
+        <div className="lg:flex items-center gap-3 mt-4 lg:mt-0">
           <p className="text-sm">Total Progress 60%</p>
-          <div className="w-60"><ProgressBar width={60} color="#6418c3" height={3}/></div>
+          <div className="w-60">
+          <ProgressBar width={60} color="#6418c3" height={2}/>
+          </div>
         </div>
       </section>
     </section>

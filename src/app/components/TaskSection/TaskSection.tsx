@@ -24,8 +24,8 @@ export default function TaskSection({}: Props) {
     },
   ];
   return (
-    <section className="mt-4 px-6 overflow-auto">
-      <div className="grid grid-cols-4 gap-10">
+    <section className="mt-4 px-6 overflow-auto overflow-x-scroll w-full">
+      <div className=" grid  grid-cols-1 md:grid-cols-3 xl:flex gap-10">
         {taskType.map((task) => {
           let taskData = todoData.filter((todo) => todo.taskTypeId === task.id);
           return (
@@ -42,7 +42,7 @@ export default function TaskSection({}: Props) {
                   +
                 </Button>
               </div>
-              <div>
+              <div className="flex flex-col items-center justify-center">
                 {/* map all the task card  */}
                 {taskData.map((data) => (
                   <TaskCard key={data.id} data={data} />

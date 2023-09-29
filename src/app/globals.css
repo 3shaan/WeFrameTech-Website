@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+#sidebar-animation {
+  width: 300px;
+  transition: width 0.5s ease;
+}

@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function NotificationMenu() {
   return (
-    <div className='flex gap-4'>
+    <div className='flex gap-4 justify-between w-full'>
         {
             notificationMenuData.map(data=>{
                 const {id, icon:Icon,number} = data;
