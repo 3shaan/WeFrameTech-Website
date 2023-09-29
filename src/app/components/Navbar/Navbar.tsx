@@ -37,7 +37,7 @@ export default function Navbar({}: Props) {
         <p className="uppercase text-white text-sm">English</p>
         <div className="w-0 h-0 border-t-8 border-r-8 border-l-8 border-transparent border-t-danger"></div>
       </div>
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-2 items-center cursor-pointer">
         <hr className="w-0.5 h-10 bg-gray-600" />
         <div className="h-10 w-10 rounded-lg bg-[#C4C4C4]" />
         <div className="text-xs text-[#C4C4C4]">

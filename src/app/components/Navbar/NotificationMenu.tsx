@@ -9,7 +9,7 @@ export default function NotificationMenu() {
             notificationMenuData.map(data=>{
                 const {id, icon:Icon,number} = data;
                 return(
-                    <div key={id} className='relative text-[#777cf1]'>
+                    <div key={id} className='relative text-[#777cf1] cursor-pointer'>
                         <Icon size={24}/>
                         <p className={clsx(`
                         absolute inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-gray-950  rounded-full -top-2 -right-2 
