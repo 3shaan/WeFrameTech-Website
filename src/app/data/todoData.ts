@@ -56,7 +56,7 @@ export const todoData :TodoType[]= [
         due_time:new Date('2023-10-02'),
         color:"#FF4A55",
         isDone:true ,
-        taskTypeId:2,
+        taskTypeId:3,
     },
     {
         id:7,
@@ -69,7 +69,7 @@ export const todoData :TodoType[]= [
         taskTypeId:3,
     },
     {
-        id:5,
+        id:8,
         tag:"Instructor Meeting",
         title:"Review/correct yellow belt techniques.",
         percentage:80,
