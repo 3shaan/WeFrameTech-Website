@@ -6,3 +6,9 @@ export interface sideBarDataType {
     title:string,
     hasSideIcon?:boolean
 }
+
+export interface NotificationMenuType {
+    id:number,
+    icon:IconType,
+    number:number | null
+}

@@ -8,7 +8,7 @@ type Props = {}
 
 export default function Sidebar({}: Props) {
   return (
-    <section className='bg-[#110f22] text-white w-[345px] h-screen p-7'>
+    <section className='bg-primary text-white  h-screen p-7'>
       <div className='flex justify-between pb-5'>
         <h3 className='text-xl'>WelframeTech</h3>
         <FaBars size={28} />

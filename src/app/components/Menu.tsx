@@ -12,7 +12,7 @@ export default function Menu({ data }: Props) {
     <div
       className={clsx(
         ` 
-    flex justify-between items-center
+    flex justify-between items-center cursor-pointer
     `,
 
         id === 3 || id === 5 || id === 6
