@@ -12,14 +12,14 @@ export default function Menu({ data }: Props) {
     <div
       className={clsx(
         ` 
-    flex justify-between items-center cursor-pointer text-sm
+    flex justify-between items-center cursor-pointer text-sm 
     `,
 
-        id === 3 || id === 5 || id === 6
-          ? "text-[#72a1f0]"
+        id === 4
+          ? "text-[#6418c3]"
           : id === 1 || id === 2
           ? "text-gray-500"
-          : "text-[#6418c3]"
+          : "text-[#72a1f0]"
       )}
     >
       <div className="flex gap-3 items-center">
@@ -30,6 +30,7 @@ export default function Menu({ data }: Props) {
         {id === 2&& <p className="px-1 py-0.5 rounded-full bg-[#5dcfff] text-white text-xs">17</p>}
       {hasSideIcon ? <AiOutlineRight /> : ""}
       { id=== 5 && <p className="text-xs px-2 bg-[#e328af] rounded-xl text-white">New</p>}
+      {id === 4 && <div className="w-1 h-7 bg-[#6418c3]  absolute right-0 rounded-full"/>}
       </div>
     </div>
   );
