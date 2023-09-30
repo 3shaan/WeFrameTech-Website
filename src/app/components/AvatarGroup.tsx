@@ -17,7 +17,7 @@ export default function AvatarGroup({width, height, isMore}: Props) {
                 ))
             }
             {
-               isMore && <div className='w-7 h-7 rounded-full bg-[#e328af] flex justify-center items-center' >10+</div> 
+               isMore && <div className='w-7 h-7 rounded-full bg-[#e328af] flex justify-center items-center text-xs' >10+</div> 
             }
             
         </div>
